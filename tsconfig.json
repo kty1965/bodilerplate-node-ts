@@ -1,18 +1,6 @@
 {
-  "extends": "@tsconfig/node12/tsconfig.json",
+  "extends": "./tsconfig.build.json",
   "compilerOptions": {
-    "preserveConstEnums": true,
-    "rootDir": ".",
-    "outDir": "build",
-    "removeComments": true
-  },
-
-  "include": [
-    "src/**/*",
-    "__tests__/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
-  ]
+    "composite": true
+  }
 }
